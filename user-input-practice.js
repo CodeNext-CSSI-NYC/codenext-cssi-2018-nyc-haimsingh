@@ -1,5 +1,5 @@
 // // Author : Haim Singh
-let readline = require("readline-sync");
+let readline = require("readline-sync")
 // // Remember that you can comment parts of your code in and out!
 // // Try this as you move from question to question below.
 //

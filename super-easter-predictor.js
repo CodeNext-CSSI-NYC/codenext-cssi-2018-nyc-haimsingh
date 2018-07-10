@@ -1,7 +1,8 @@
 // Author: Haim Singh
 let readline = require("readline-sync");
+let randomInt = require("random-int")
 console.log("Welcome to super Easter Predictor");
-let y = parseInt(readline.question("Enter a year Greater that 1582 "));
+let y = randomInt(1583, 2003);
 let a = y % 19;
 let b = Math.floor(y / 100);
 let c = y % 100;
