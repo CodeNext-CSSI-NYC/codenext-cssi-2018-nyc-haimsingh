@@ -3,6 +3,7 @@ var x, y, z;
 x = 10;
 y = x - 4;
 z = x - y + 1;
+debugger;
 x *= 3;
 y = ++z;
 x /= y;
