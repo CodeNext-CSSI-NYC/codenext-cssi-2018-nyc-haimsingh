@@ -10,12 +10,12 @@ let c = 10;
 // Fill in the code below based on the quadratic formula
 // Hint: for this next line, you will need to use a math concept that we haven't talked about.
 // Luckily, the operation you need is one google search away!
-let discriminant =((b ** 2) -4 * a * c);
+let discriminant = ((b ** 2) - 4 * a * c);
 
 // There are two numerators and two answers because of the plus-minus
 let numerator1 = -b + Math.sqrt(discriminant);
 let numerator2 = -b - Math.sqrt(discriminant);
-let denominator = 2 * a ;
+let denominator = 2 * a;
 let answer1 = numerator1 / denominator;
 let answer2 = numerator2 / denominator;
 

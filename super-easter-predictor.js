@@ -21,4 +21,4 @@ let p = (h + r - 7 * m + 114) % 31;
 let day = p + 1;
 let month = n;
 
-console.log("In " + y +" Easter is on " + month + "/" + day);
+console.log("In " + y + " Easter is on " + month + "/" + day);

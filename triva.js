@@ -5,15 +5,15 @@ let numW = 0;
 let numR = 0;
 let quizYN = readline.question("Do you want to take a quiz? y(yes) n(no)");
 if (quizYN == 'y') {
-    console.log("Lets starts");
-    console.log("How much you know about Yu-Gi-Oh ");
+  console.log("Lets starts");
+  console.log("How much you know about Yu-Gi-Oh ");
   let q1 = readline.question("How much life points(LP) do each duelist start with? a(4000) b(6000) c(8000)")
   if (q1 == 'c') {
     console.log("Correct! Each duel starts with 8000 life points")
     numR++
     console.log(numR + " Right");
     console.log(numW + " Wrong");
-  }else {
+  } else {
     console.log("Incorrect! Each duel starts with 8000 life points");
     numW++
     console.log(numR + " Right");
@@ -25,7 +25,7 @@ if (quizYN == 'y') {
     numR++
     console.log(numR + " Right");
     console.log(numW + " Wrong");
-  }else {
+  } else {
     console.log("Incorrect! A duelist can anywhere between 40 -70 cards");
     numW++
     console.log(numR + " Right");
@@ -37,7 +37,7 @@ if (quizYN == 'y') {
     numR++
     console.log(numR + " Right");
     console.log(numW + " Wrong");
-  }else {
+  } else {
     console.log("Incorrect! There are 1.Normal 2.Fusion 3.Ritual 4.XYZ 5.Link 6.Syncro");
     numW++
     console.log(numR + " Right");
@@ -49,7 +49,7 @@ if (quizYN == 'y') {
     numR++
     console.log(numR + " Right");
     console.log(numW + " Wrong");
-  }else {
+  } else {
     console.log("Inorrect! There are 1.Normal 2.Quick-Play 3.Ritual 4.Field 5.Continuous 6.Equip");
     numW++
     console.log(numR + " Right");
@@ -61,12 +61,12 @@ if (quizYN == 'y') {
     numR++
     console.log(numR + " Right");
     console.log(numW + " Wrong");
-  }else {
+  } else {
     console.log("Inorrect! There are 1.Normal 2.Continuous 3.Counter");
     numW++
     console.log(numR + " Right");
     console.log(numW + " Wrong");
   }
-}else {
+} else {
   console.log("Goodbye");
 }

@@ -37,7 +37,7 @@
 
 // 4a. Write (declare) a function that takes one parameter called name and
 // returns (not prints out, just returns) the string "Hello ____", with the name in the blank.
-function name(userName){
+function name(userName) {
   return userName;
 }
 // 4b. Call the function and store the result in a variable. Then, print out that variable.
@@ -57,9 +57,9 @@ function average(num5, num6) {
 }
 // 5b. Call the function and store the result in a variable. Then, print out that variable
 // in a sentence like "The average is _____".
-let d = average(3 , 6);
-let e = average(4 , 8);
-let f = average("apple" , 10);
+let d = average(3, 6);
+let e = average(4, 8);
+let f = average("apple", 10);
 
 console.log("The Average is " + d);
 console.log("The Average is " + e);
