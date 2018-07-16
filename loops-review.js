@@ -105,6 +105,21 @@ const arraySum = require('array-sum');
 // values from 1 to number - 1 and add together all the ones that are factors of
 // number. Return true if this sum is equal to number, false otherwise.
 // Make sure it returns true for 6 and 28 and false for pretty much anything else.
-function perfectNum() {
+let factor = [];
 
+function perfectNum(num) {
+  for (var i = 1; i < num; i++) {
+    if (num % i == 0) {
+      factor.push(i);
+    }
+
+    console.log(factor);
+    console.log(arraySum(factor));
+    if ((arraySum(factor) == num)) {
+      console.log(true);
+    } else {
+      console.log(false);
+    }
+  }
 }
+perfectNum(6);
