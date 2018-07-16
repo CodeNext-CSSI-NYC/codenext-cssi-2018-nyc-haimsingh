@@ -23,7 +23,12 @@ let readline = require("readline-sync");
 // If it contains an X, it should return false, because the game is not over.
 // If it contains no X's, it should return true, because the game is over.
 function isGameOver(tracker) {
-  // Your code here
+  for (var i = 0; i < tracker.length; i++) {
+    if (tracker[i] == "X") {
+      return false;
+    }
+  }
+  return true;
 }
 
 // This function prints out the tracker array so that the user can see how they are doing.
@@ -35,7 +40,7 @@ function isGameOver(tracker) {
 // and then adds a space to the new string.
 // After the loop is over, it prints out this string.
 function render(tracker) {
-  // Your code here
+  console.log(tracker.join(" "));
 }
 
 // This function returns a shuffled array of numbers, like [2, 3, 1, 3, 0, 2, 0, 1]
@@ -47,6 +52,13 @@ function render(tracker) {
 // This will shuffle and return the array.
 function shuffleCards(numMatches) {
   // Your code here
+  let empty = [];
+  for (var i = 0; i < numMatches; i++) {
+    empty.push(i);
+    empty.push(i);
+    shuffle(empty);
+  }
+  return empty;
 }
 
 // This function returns an array like ["X", "X", "X", "X", "X", "X", "X", "X"]
@@ -60,6 +72,12 @@ function shuffleCards(numMatches) {
 // Return this array.
 function createTracker(numMatches) {
   // Your code here
+  let empty2 = [];
+  for (var i = 0; i < numMatches; i++) {
+    empty2.push("X")
+    empty2.push("X")
+  }
+  return empty2;
 }
 
 // This function controls the whole game.
@@ -93,6 +111,15 @@ function play() {
   let numGuesses = 0;
   console.clear();
   // Your code here
+  while (isGameOver(tracker) == false) {
+    render(tracker);
+    numGuesses++;
+    let index1 = parseInt(readline.question("What do you guess for your first? "));
+    let index2 = parseInt(readline.question("What do yau quess for your second "));
+
+  }
+
+
 }
 
 function run() {
