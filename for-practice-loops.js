@@ -86,28 +86,28 @@ const readline = require('readline-sync');
 //
 
 // // 7. Given a string of any length, return a new string that is a copy of that string in reverse.
-function reverseString(str) {
-  let nwWord = str.split("").reverse().join('');
-  return nwWord;
-  // for (var i = 0; i < str.length; i++) {
-  // str[i]
-  // }
-}
-// Some tests
-console.log(reverseString("banana") == "ananab");
-console.log(reverseString("Was it a car or a cat I saw?") == "?was I tac a ro rac a ti saW");
-console.log(reverseString("doorag") == "garood");
-console.log(reverseString("a") == "a");
-console.log(reverseString("") == "");
-//
+// function reverseString(str) {
+//   let nwWord = str.split("").reverse().join('');
+//   return nwWord;
+//   // for (var i = 0; i < str.length; i++) {
+//   // str[i]
+//   // }
+// }
+// // Some tests
+// console.log(reverseString("banana") == "ananab");
+// console.log(reverseString("Was it a car or a cat I saw?") == "?was I tac a ro rac a ti saW");
+// console.log(reverseString("doorag") == "garood");
+// console.log(reverseString("a") == "a");
+// console.log(reverseString("") == "");
+// //
 //
 // //
 // // Bonus - 8. Write a function isPrime that takes a number and checks if it is prime.
 // // It should return either true or false.
 // // Recall that a prime number is only divisible by itself and 1.
-function isPrime(num) {
+// function isPrime(num) {
 
-}
+// }
 // // Here are some tests -- add more
 // console.log(isPrime(89) == true);
 // console.log(isPrime(91) == false);
