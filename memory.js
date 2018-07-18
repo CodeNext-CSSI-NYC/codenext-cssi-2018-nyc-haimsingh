@@ -116,7 +116,7 @@ function play() {
     numGuesses++;
     let index1 = parseInt(readline.question("What do you guess for your first? "));
     let index2 = parseInt(readline.question("What do yau quess for your second "));
-
+    let current1 = 
   }
 
 
