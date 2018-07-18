@@ -32,36 +32,56 @@ let arr2 = ["apple", "X", "pear", "banana"];
 
 // 2. Once you have this version working, make a different version that
 // tells you which items in the array are duplicated.
-// For example, in [3,4,5,6,7,1,2,5,9] the only duplicate is 5
-// However, in [3,4,5,4,7,4,2,5,9] the duplicates are 5 and 4 (which appears three times)
-function listDuplicates(array) {
-	for (var i = 0; i < array.length; i++) {
-		for (var j = 0; j < array.length; j++) {
-			let test2 = array[j]
-			let test1 = array[i]
-			if ((array[i] == array[j]) && (i != j)) {
-				console.log(array[i], array[j]);
-				return true;
-			}
-
-		}
-
-	}
-	return false;
-
-}
-
-
-listDuplicates(arr1)
+// // For example, in [3,4,5,6,7,1,2,5,9] the only duplicate is 5
+// // However, in [3,4,5,4,7,4,2,5,9] the duplicates are 5 and 4 (which appears three times)
+// function listDuplicates(array) {
+// 	for (var i = 0; i < array.length; i++) {
+// 		for (var j = 0; j < array.length; j++) {
+// 			let test2 = array[j]
+// 			let test1 = array[i]
+// 			if ((array[i] == array[j]) && (i != j)) {
+// 				console.log(array[i]);
+// 			}
+//
+// 		}
+// 		if ((array[i] == array[j]) && (i != j)) {
+// 			return true;
+// 		}
+// 		// return false;
+//
+// 	}
+// }
+//
+// listDuplicates(arr1)
 
 // Bonus:
 // 3. A related question (though one that has nothing to do with nested loops)
 // is to find the mode (the item that appears most often) of an array.
 // Write a function that does that.
-function findMode(arr) {
+function findMode(array) {
+	let hasmostValues = [];
+	for (let i = 0; i < array.length; i++) {
+		let word = array[i];
+		let numCounted = 0;
 
+
+		for (let j = 0; j < word.length; j++) {
+			let letter = word.charAt(j);
+			if (letter.toLowerCase() == "e") {
+				numCounted++;
+			}
+		}
+
+
+		if (numCounted >= 4) {
+			findMode.push(word);
+		}
+
+		console.log(findMode);
+
+	}
 }
-// If you test with [3,4,5,4,7,4,2,5,9] it should return 4.
+// If you test ay [3,4,5,4,7,4,2,5,9] it should return 4.
 // If it's a case where multiple items appear the most, you can decide to either
 // return just one of them, or to return all of them.
 // For example [3,4,5,4,7,3,2,5,9] has three values that appear most: 3, 4, and 5.
