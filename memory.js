@@ -23,12 +23,12 @@ let readline = require("readline-sync");
 // If it contains an X, it should return false, because the game is not over.
 // If it contains no X's, it should return true, because the game is over.
 function isGameOver(tracker) {
-  for (var i = 0; i < tracker.length; i++) {
-    if (tracker[i] == "X") {
-      return false;
-    }
-  }
-  return true;
+	for (var i = 0; i < tracker.length; i++) {
+		if (tracker[i] == "X") {
+			return false;
+		}
+	}
+	return true;
 }
 
 // This function prints out the tracker array so that the user can see how they are doing.
@@ -40,7 +40,7 @@ function isGameOver(tracker) {
 // and then adds a space to the new string.
 // After the loop is over, it prints out this string.
 function render(tracker) {
-  console.log(tracker.join(" "));
+	console.log(tracker.join(" "));
 }
 
 // This function returns a shuffled array of numbers, like [2, 3, 1, 3, 0, 2, 0, 1]
@@ -51,14 +51,14 @@ function render(tracker) {
 // The last line should be: return shuffle(arr)
 // This will shuffle and return the array.
 function shuffleCards(numMatches) {
-  // Your code here
-  let empty = [];
-  for (var i = 0; i < numMatches; i++) {
-    empty.push(i);
-    empty.push(i);
-    shuffle(empty);
-  }
-  return empty;
+	// Your code here
+	let empty = [];
+	for (var i = 0; i < numMatches; i++) {
+		empty.push(i);
+		empty.push(i);
+		shuffle(empty);
+	}
+	return empty;
 }
 
 // This function returns an array like ["X", "X", "X", "X", "X", "X", "X", "X"]
@@ -71,13 +71,13 @@ function shuffleCards(numMatches) {
 // So if numMatches is 4, we will have 8 X's.
 // Return this array.
 function createTracker(numMatches) {
-  // Your code here
-  let empty2 = [];
-  for (var i = 0; i < numMatches; i++) {
-    empty2.push("X")
-    empty2.push("X")
-  }
-  return empty2;
+	// Your code here
+	let empty2 = [];
+	for (var i = 0; i < numMatches; i++) {
+		empty2.push("X")
+		empty2.push("X")
+	}
+	return empty2;
 }
 
 // This function controls the whole game.
@@ -102,29 +102,29 @@ function createTracker(numMatches) {
 // After the game is over, print out a message saying how many guesses it took
 //   the player to reveal all the cards.
 function play() {
-  // This line controls how many pairs of numbers will be in the game.
-  // I recommend starting with 4 pairs and trying bigger numbers later.
-  let numMatches = 4;
-  // Don't change these next three lines.
-  let answer = shuffleCards(numMatches);
-  let tracker = createTracker(numMatches);
-  let numGuesses = 0;
-  console.clear();
-  // Your code here
-  while (isGameOver(tracker) == false) {
-    render(tracker);
-    numGuesses++;
-    let index1 = parseInt(readline.question("What do you guess for your first? "));
-    let index2 = parseInt(readline.question("What do yau quess for your second "));
-    let current1 = 
-  }
+	// This line controls how many pairs of numbers will be in the game.
+	// I recommend starting with 4 pairs and trying bigger numbers later.
+	let numMatches = 4;
+	// Don't change these next three lines.
+	let answer = shuffleCards(numMatches);
+	let tracker = createTracker(numMatches);
+	let numGuesses = 0;
+	console.clear();
+	// Your code here
+	while (isGameOver(tracker) == false) {
+		render(tracker);
+		numGuesses++;
+		let index1 = parseInt(readline.question("What do you guess for your first? "));
+		let index2 = parseInt(readline.question("What do yau quess for your second "));
+		let current1 =
+	}
 
 
 }
 
 function run() {
-  console.clear();
-  play();
+	console.clear();
+	play();
 }
 
 run();

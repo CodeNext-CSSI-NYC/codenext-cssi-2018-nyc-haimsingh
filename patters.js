@@ -46,9 +46,11 @@
 // X------X
 // X------X
 // XXXXXXXX
-// for (let i = 0; i < 9; i++) {
+
+// let num = 9
+// for (let i = 0; i < num; i++) {
 // 	let row = "";
-// 	if ((i == 0) || (i == 8)) {
+// 	if ((i == 0) || (i == num-1)) {
 // 		row = "XXXXXXXX";
 // 	} else {
 // 		for (let j = 0; j < i + 1; j++) {
@@ -71,23 +73,24 @@
 //     *
 //    **
 //   ***
-// //  ****
-// // *****
-// //
-// for (let i = 6; i > 0; i--) {
-// 	let row = "";
-// 	for (let j = 0; j < 6; j++) {
-// 		if (j < i - 1) {
-// 			row += " ";
-// 		} else {
-// 			row += "*";
-// 		}
-//
-//
-//
-// 	}
-// 	console.log(row);
-// }
+//  ****
+// *****
+
+for (let i = 6; i > 0; i--) {
+	let row = "";
+	for (let j = 0; j < 6; j++) {
+		if (j < i - 1) {
+			row += " ";
+		} else {
+			row += "*";
+		}
+
+
+		// row = row + "xxx"
+		// row = "x" + row
+	}
+	console.log(row);
+}
 
 
 // 4. Here's one that builds on the same idea in the previous pattern:
@@ -97,24 +100,24 @@
 //  * *     3,3     3,1
 // *   *    4,4     0,0
 
-for (let i = 0; i < 5; i++) {
-	let row = " ";
-	for (var j = 0; j < 5; j++) {
-		if (i == j) {
-			row = "*" + row
-		}
-		// for (let j = 0; j <= i; j++) {
-		row = "*" + row;
-
-		// console.log(row);
-		// row = "*" + row;
-	}
-	// row = "*" + row;
-
-	console.log(row);
-	// console.log(row);
-}
+// for (let i = 0; i < 5; i++) {
+// 	let row = " ";
+// 	for (var j = 0; j < 5; j++) {
+// 		if (i == j) {
+// 			row = "*" + row
+// 		}
+// 		// for (let j = 0; j <= i; j++) {
+// 		row = "*" + row;
 //
+// 		// console.log(row);
+// 		// row = "*" + row;
+// 	}
+// 	// row = "*" + row;
+//
+// 	console.log(row);
+// 	// console.log(row);
+// }
+// //
 // let row2 = "high";
 // console.log(row2);
 // row2 = "8" + row2;
