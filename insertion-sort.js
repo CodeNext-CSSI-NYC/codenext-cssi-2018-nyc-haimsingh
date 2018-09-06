@@ -20,8 +20,6 @@ for (var i = 0; i < arr.length; i++) {
 	console.log(arr);
 }
 // The inner loop may swap items several times as it moves:
-
-
 // This inner loop moves each element into its proper spot among elements to its left,
 // ignoring elements to its right.
 // After this process happens many times, the array should be sorted.

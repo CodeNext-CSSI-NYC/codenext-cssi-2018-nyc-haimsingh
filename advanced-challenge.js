@@ -15,7 +15,15 @@ canBalance([10, 10]) → true
 *******************************************************************************/
 
 function canBalance(nums) {
-
+	let balance = 0;
+	for (var i = 0; i < nums.length; i++) {
+		balance = nums[i] + balance;
+		console.log(balance);
+		if (balance % 2 == 0) {
+			return true;
+		}
+	}
+	// return false;
 }
 
 // Test this function.
@@ -40,7 +48,7 @@ function maxSpan(nums) {
 }
 
 // Test this function.
-testMaxSpan();
+// testMaxSpan();
 
 /******************************************************************************
                                    linearIn()
@@ -62,7 +70,7 @@ function linearIn(outer, inner) {
 }
 
 // Test this function.
-testLinearIn();
+// testLinearIn();
 
 
 
